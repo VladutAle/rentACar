@@ -54,41 +54,41 @@ public class Example {
             switch (choice) {
 
                 //First case for finding car type
-                case 1:
+                case 1 -> {
                     System.out.println("1-Electrical");
                     System.out.println("2-Gasoline");
                     System.out.println("Choose your preffered car type: ");
                     carChoice = scanner.nextInt();
                     menu.printCarChoice(carChoice);
-                    break;
+                    System.out.println("Don't forget to wear the seat bell!");
+                }
 
                 //Second case for finding van type
-                case 2:
+                case 2 -> {
                     System.out.println("1-Family ");
                     System.out.println("2-Transporter");
                     System.out.println("Choose your preffered van type: ");
                     vanChoice = scanner.nextInt();
                     menu.printVanChoice(vanChoice);
-                    break;
+                }
 
                 //Third case for finding bike type
-                case 3:
+                case 3 -> {
                     System.out.println("1-Tour motorbike");
                     System.out.println("2-Sport motorbike");
                     System.out.println("3-City motorbike");
-
                     System.out.println("Choose your preffered motorbike type: ");
                     bikeChoice = scanner.nextInt();
                     menu.printBikeChoice(bikeChoice);
-                    break;
+                    System.out.println("Drive safely!");
+                }
 
                 //Fourth case for exit
-                case 4:
-                    System.exit(0);
+                case 4 -> System.exit(0);
 
-                    //default case to display the message invalid choice made by the user
-                default:
-                    System.out.println("Invalid choice!!! Please make a valid choice. \\n\\n");
+
+                //default case to display the message invalid choice made by the user
+                default -> System.out.println("Invalid choice!!! Please make a valid choice. \\n\\n");
             }
             break;
         }
